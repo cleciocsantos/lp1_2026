@@ -7,4 +7,13 @@ adulto      - de 18 a 59 anos
 idoso       - a partir de 60 anos
 '''
 
-# Essa questão será corrigida na próxima aula
+# Solução
+idade = int(input("Digite a idade: "))
+if idade < 12:
+    print("É criança.")
+elif idade <= 17:
+    print("É adolescente.")
+elif idade <= 59:
+    print("É adulto.")
+else:
+    print("É idoso.")
