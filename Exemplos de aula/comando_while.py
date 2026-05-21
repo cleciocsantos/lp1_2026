@@ -32,6 +32,5 @@ x = 1
 valor_usuario = int(input("Digite um valor: "))
 while x <= valor_usuario:
     print(x)
-    x = x + 1
+    x += 1 # é a mesma coisa que x = x + 1
 
-    
