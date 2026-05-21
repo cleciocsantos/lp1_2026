@@ -1,7 +1,7 @@
 # Faça um programa para calcular a soma de 10 números digitados pelo usuário.
 
 soma = 0 # a variável soma é um ACUMULADOR porque ela vai acumular o resultado parcial da soma a cada rodada do while
-x = 1 # a variável x é um contador porque ela vai ser usada para contar quantas vezes o while deve ser executado
+x = 1 # a variável x é um CONTADOR porque ela vai ser usada para contar quantas vezes o while deve ser executado
 while x <= 10:
     numero = int(input("Digite um valor: "))
     soma += numero
