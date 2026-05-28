@@ -1,4 +1,5 @@
 # Atividade Avaliativa 3 (comando while) - 0,5 pontos - Em duplas - 21/05/2026
+
 ### 1. Peça ao usuário para digitar 10 números e informe qual foi o maior número digitado.
 
 ### 2. Solicite uma senha ao usuário. O programa deve continuar pedindo a senha até o usuário digitar a senha correta (senha correta: "1234")
