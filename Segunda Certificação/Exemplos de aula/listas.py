@@ -1,3 +1,9 @@
+# Cria a função de imprimir frutas.
+def imprimir_frutas(frutas):
+    print("\nFrutas cadastradas:\n")
+    for i, fruta in enumerate(frutas):
+        print(f"[{i+1}] - {fruta}")
+
 # Inicia uma lista vazia.
 frutas = []
 
@@ -8,17 +14,20 @@ while contador <= 3:
     frutas.append(fruta)
     contador += 1
 
-# Exibe todas as frutas cadastradas.
-print("\nFrutas cadastradas:\n")
-for fruta in frutas:
-    print(fruta)
+# Chama a função para imprimir todas as frutas cadastradas.
+imprimir_frutas(frutas)
 
 # Pede ao usuário para substituir uma fruta na lista.
 indice = int(input(f"Digite o indíce onde se quer alterar: "))
 fruta = input(f"Digite a fruta substituta: ")
-frutas[indice] = fruta
+frutas[indice-1] = fruta
 
-# Exibe novamente as frutas cadastradas após a substituição feita.
-print("\nFrutas cadastradas:\n")
-for fruta in frutas:
-    print(fruta)
+# Chama a função para imprimir todas as frutas cadastradas.
+imprimir_frutas(frutas)
+
+# Pede ao usuário para excluir uma fruta na lista.
+indice = int(input(f"Digite o indíce da frutas que se quer excluir: "))
+frutas.pop(indice-1)
+
+# Chama a função para imprimir todas as frutas cadastradas.
+imprimir_frutas(frutas)
